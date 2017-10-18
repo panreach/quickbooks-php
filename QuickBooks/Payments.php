@@ -54,7 +54,7 @@ QuickBooks_Loader::load('/QuickBooks/Payments/Token.php');
 /**
  * QuickBooks Merchant Service implementation
  */
-class Quickbooks_Payments
+class QuickBooks_Payments
 {
 	/**
 	 * No error occurred
@@ -121,11 +121,11 @@ class Quickbooks_Payments
 	{
 		if ($this->_sandbox)
 		{
-			return Quickbooks_Payments::BASE_SANDBOX;
+			return QuickBooks_Payments::BASE_SANDBOX;
 		}
 		else
 		{
-			return Quickbooks_Payments::BASE_PRODUCTION;
+			return QuickBooks_Payments::BASE_PRODUCTION;
 		}
 	}
 
